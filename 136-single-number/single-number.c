@@ -1,7 +1,7 @@
 int singleNumber(int* nums, int numsSize) {
 
 
-
+/*
     for(int i = 0;i<numsSize;i++){
         int s=0;
         for(int j = 0 ; j<numsSize; j++){
@@ -16,4 +16,13 @@ int singleNumber(int* nums, int numsSize) {
     }
 
     return -1;
+    */
+
+    int result = 0;
+
+    for (int i = 0; i < numsSize; i++) {
+        result ^= nums[i];
+    }
+
+    return result;
 }
