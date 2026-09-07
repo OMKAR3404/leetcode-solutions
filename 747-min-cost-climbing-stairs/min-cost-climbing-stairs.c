@@ -23,9 +23,8 @@ int minCostClimbingStairs(int* cost, int costSize) {
         dp[i] = cost[i] + min(dp[i-1],dp[i-2]);
     }
 
-    int answer = min(dp[n-1],dp[n-2]);
 
-    return answer ;
+    return min(dp[n-1],dp[n-2]) ;
 
     
 }
